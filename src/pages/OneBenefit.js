@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from 'react'
 
 import BenefitModel from "../models/benefit";
-import BenefitCard from "../components/BenefitCard";
+// import BenefitCard from "../components/BenefitCard";
+// import UserBenefitModel from '../models/userBenefit';
 
 const OneBenefit = (props) => {
-  const [benefit, setBenefit] = useState()
-  const [currentBenefit, setCurrentBenefit] = useState(props.match.params.id)
+  const [oneBenefit, setOneBenefit] = useState()
+  // const [benefitTeas, setBenefitTeas] = useState()
+  // const [currentBenefit, setCurrentBenefit] = useState(props.match.params.id)
+  console.log(props)
 
+  const fetchOneBenefit = () => {
+    BenefitModel.show().then(data => {
+      
+    }
 
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-  const fetchData = () => {
-    BenefitModel.show(currentBenefit).then(data => {
-      setBenefit( data.benefit )
-    })
+      // console.log(oneBenefit)
+    )
   }
 
+
   return (
-    <div>
-      <h1>Here is the one benefit you chose</h1>
-      <hr />
-      <BenefitCard {...benefit} />
-    </div>
+
+    <>
+    <OneBenefit oneBenefit={oneBenefit} />
+    <h1>Jello</h1>
+    </>
   )
 }
 

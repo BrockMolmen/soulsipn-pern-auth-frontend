@@ -1,5 +1,6 @@
 import React from 'react'
 import useUserBenefits from "../hooks/useUserBenefits";
+import OneBenefit from './OneBenefit';
 
 const AllUserBenefits = () => {
     const [userBenefits, fetchUserBenData] = useUserBenefits([])
@@ -8,6 +9,7 @@ const AllUserBenefits = () => {
         return userBenefits.map((userBenefit, index) => (
             <Col xs={4}>
                 <UserBenefitCard userBenefit={userBenefit} key={userBenefit.id} />
+                <OneBenefit userBenefit={userBenefit} key={userBenefit.id} />
             </Col>
         ))
     }
