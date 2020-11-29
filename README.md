@@ -64,4 +64,4 @@ Instructors and TAs
 
 Supportive Classmates
 - Ashley Nguyen
-- Kelsey
+- Kelsey Whallon
