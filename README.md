@@ -29,6 +29,11 @@ For Soul Sip'n we used many different technologies.
 - SASS
 - React Spring
 
+## ERD
+![ERD](public/images/ERD.png)
+
+Here is the ERD for all of the database workings and associations.
+
 ## Wireframing / Pre-Code Planning
 
 ![SPNWireframe](public/images/wireframe/SPNWireframe.png)
