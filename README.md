@@ -27,6 +27,7 @@ For Soul Sip'n we used many different technologies.
 - Node.js
 - React-Strap
 - SASS
+- React Spring
 
 ## Wireframing / Pre-Code Planning
 
