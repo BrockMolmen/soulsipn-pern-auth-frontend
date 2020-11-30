@@ -41,6 +41,16 @@ For Soul Sip'n we used many different technologies.
 
 This code is the snippet of code on the "TeaCard" page. It shows the solution to our blocker of having to display two databases on one page.
 
+![FindAllBens](public/images/FindAllBens.jpg)
+
+This code is where the database finds all users by their id and includes their saved benefits if there are any. If there are no benefits saved then a message will prompt stating that there isn't any saved benefits in the database. There is also an included catch error that will trigger if there was a problem with returning the data of the user.
+
+![Update](public/images/Update.jpg)
+
+Here is code that shows how the update feature works. The data for a user gets updated using the PUT method and accessing the correct URL path by accessing the user's id and having the JSON stringify the newly entered data.
+
+
+
 ## Blockers and Unsolved Problems
 The team had a lot of blockers while making this app. The databases was one of the hardest hurdles to overcome. With the confusing one to many and many to many relationships about the many teas and the many benefits, databases were created and dropped _many_ times. Thankfully, Lauren and Brock were able to create the perfect database for all the tea and benefit info.
 
