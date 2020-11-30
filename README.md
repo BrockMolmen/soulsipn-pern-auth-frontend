@@ -55,6 +55,10 @@ This code is where the database finds all users by their id and includes their s
 
 Here is code that shows how the update feature works. The data for a user gets updated using the PUT method and accessing the correct URL path by accessing the user's id and having the JSON stringify the newly entered data.
 
+![Columns](public/images/Columns.png)
+
+This code is using the React-Strap package that allows for bootstrap functionality while also working with react. The particular code implements columns for the different cards and helps with the responsivness of the app.
+
 
 
 ## Blockers and Unsolved Problems
