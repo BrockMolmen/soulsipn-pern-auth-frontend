@@ -40,13 +40,12 @@ const UserCard = ({user}) => {
                 })
         }
     return (
-
         <div className="RegDiv">
             <h2>Update User Info</h2>
             <form onSubmit={handleNewSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">First Name:</label>
-                    <input
+                    <input className="RegInputBox"
                         onChange={handleNewFirstName}
                         value={newFirstName}
                         type="text"
@@ -58,7 +57,7 @@ const UserCard = ({user}) => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="name">Last Name:</label>
-                    <input
+                    <input className="RegInputBox"
                         onChange={handleNewLastName}
                         value={newLastName}
                         type="text"
@@ -70,7 +69,7 @@ const UserCard = ({user}) => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="name">Email:</label>
-                    <input
+                    <input className="RegInputBox"
                         onChange={handleNewEmail}
                         value={newEmail}
                         type="email"
@@ -80,7 +79,6 @@ const UserCard = ({user}) => {
                         required
                     />
                 </div>
-
                 <button type="submit">Update</button>
             </form>
         </div>

@@ -30,15 +30,11 @@ const Profile = (props) => {
       </Col>
     ))
   }
-<<<<<<< HEAD
-
-=======
   
->>>>>>> submain
   return (
     <div>
+      <Link className="teasLink editUserLink" to={`/user/${userId}`}>Edit Your Info</Link>
       <h1>Hello {userInfo}</h1>
-      <Link to={`/user/${userId}`}>Edit Your Info</Link>
       <h1>Here are your saved benefits!</h1>
       { userBenefits.length ?
         <Container fluid>
