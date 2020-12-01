@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* // #9E8E8E -- milk tea
+// #FFFFFF -- white. just whaite
+// #EBEBEB -- cup in the shade
+// #7E9E87 -- leafy green
+// #595959 -- black tea w/ milk */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  color: #595959;
+  font-weight: 600;
+}
+
+h1 {
+  color:rgb(42, 59, 48);
+  margin: 10px 0px 14px 7px;
+  text-align: left;
+
+}
+
+h2 {
+  color: #9E8E8E;
+  margin-bottom: 25px;
+}
+
+/* .fadeIn {
+  margin: 0;
+  position: absolute;
+  color: dodgerblue;
+  top: 40%;
+  left: 25%;
+  animation: ease-in 2s;
+} */
+
+button {
+  border-radius: 10px;
+  border: solid 1px #7E9E87;
+  color: #7E9E87;
+  font-weight: 600;
+  font-size: .90em
+   
 }
 
 code {
@@ -14,4 +53,127 @@ code {
 
 a {
   text-decoration: none;
+  padding: 10px;
 }
+
+.homePage {
+  flex-direction: column;
+}
+
+.col-xs-12, .col-sm-6, .col-md-4, .col-lg-3 {
+  padding: 0;
+  margin: 0;
+}
+
+.TeaCard, .BenefitCard, .UserBenefitCard {
+  width: 95%;
+  font-size: 1em;
+  margin: 5px;
+  padding: 5px;
+  padding-right: 10px;
+  background: rgba(235, 235, 235, .8);
+  border: solid 2px #9E8E8E;
+  border-radius: 10px;
+  align-items: stretch;
+}
+
+.BenefitCard, .UserBenefitCard {
+  font-size: 1.25em;
+}
+
+.TeaCard  {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.TeaCard > h3 {
+  color: #9E8E8E;
+}
+
+.RegDiv, .LogDiv {
+  color: #595959;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.RegDiv form, .LogDiv form {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  background: #EBEBEB;
+  padding: 15px;
+  border: solid 2px #9E8E8E;
+  border-radius: 10px;
+}
+
+.RegDiv label, .LogDiv label {
+  margin-right: 5px;
+  display: table-cell;
+}
+ .RegInputBox {
+   border: none;
+   
+ }
+
+ .RegInputBox:focus {
+   outline: none;
+ }
+
+ .teasLink {
+   color: #9E8E8E
+ }
+
+ .teasLink:hover {
+  color: #776a6a
+}
+
+.benName {
+  font-size: 1.2em
+}
+
+.editUserLink {
+  float: right;
+  padding-right: 14px
+}
+
+.carousel {
+  width: 50%;
+  min-width: 350px;
+  margin-left: 11px;
+}
+
+.mainTitle {
+  font-size: 5em;
+}
+
+.fade {
+  font-size: 13em;
+  color: #7E9E87;
+  font-weight: bold;
+  
+}
+
+/* Media Responsiveness */
+@media only screen and (max-width: 1050px) {
+  body {
+    font-size: 1em;
+  }
+
+  .TeaCard, .BenefitCard, .UserBenefitCard {
+    padding: 1px;
+    align-items: stretch;
+  }
+}
+
+
+@media only screen and (max0width: 530px) {
+  body {
+    font-size: .75em;
+  }
+
+  .h3 {
+    font-size: 1.25em;
+  }
+
+}
+

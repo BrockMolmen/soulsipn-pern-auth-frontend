@@ -1,9 +1,19 @@
+// #9E8E8E -- milk tea
+// #FFFFFF -- white. just whaite
+// #EBEBEB -- cup in the shade
+// #7E9E87 -- leafy green
+// #595959 -- black tea w/ milk
+
+
 header {
-  background-color: slategrey;
+  background-color: #7E9E87;
+  opacity: 0.8;
   text-align: left;
   padding: 20px 10px;
+  margin: 10px;
   display: flex;
   justify-content: space-between;
+  
 
   a {
     color: #fff;
@@ -22,6 +32,16 @@ header {
     li {
       list-style-type: none;
       padding: 0px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header {
+    a {
+      display: block;
+      margin: 0;
+      padding: 0;
     }
   }
 }
